@@ -1,0 +1,10 @@
+.griddiv {
+    display: grid;
+    /*grid-template-columns: repeat(100, 1fr);*/
+    grid-gap: 0px;
+}
+
+div{
+    background: blue;
+    /*color: green;*/
+}
