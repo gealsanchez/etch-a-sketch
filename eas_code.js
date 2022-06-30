@@ -22,6 +22,7 @@ for (let i = 0; i < (col * col); i++) {
 
 function clear() {
 
+    divb.innerHTML='';
     const col = prompt('Please write the number of columns?');
     divb.style.setProperty('grid-template-columns', 'repeat(' + col + ', 1fr)');
 
@@ -35,6 +36,8 @@ function clear() {
         div.textContent = i;
         divb.appendChild(div);
     }
+
+    const divs = document.querySelectorAll('.grid');
 
     divs.forEach(div => div.addEventListener('mouseover', function (event) {
         event.target.style.backgroundColor = "orange";
